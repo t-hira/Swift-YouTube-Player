@@ -225,7 +225,7 @@ open class YouTubePlayerView: UIView, WKNavigationDelegate {
     }
     
     open func playVideoAt(_ index: Int) {
-        evaluatePlayerCommand("playVideoAt(\(at))")
+        evaluatePlayerCommand("playVideoAt(\(index))")
     }
 
     fileprivate func evaluatePlayerCommand(_ command: String, completion: ((Any?) -> Void)? = nil) {
