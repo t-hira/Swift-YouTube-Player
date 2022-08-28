@@ -222,6 +222,9 @@ open class YouTubePlayerView: UIView, WKNavigationDelegate {
     
     open func setShuffle() {
         evaluatePlayerCommand("setShuffle()")
+    }
+    
+    open func playVideoFirst() {
         evaluatePlayerCommand("playVideoAt(0)")
     }
 
