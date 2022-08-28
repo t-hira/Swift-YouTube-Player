@@ -220,11 +220,11 @@ open class YouTubePlayerView: UIView, WKNavigationDelegate {
         evaluatePlayerCommand("nextVideo()")
     }
     
-    open func setShuffle() {
-        evaluatePlayerCommand("setShuffle()")
+    open func setShuffle(_ shufflePlaylist: Bool) {
+        evaluatePlayerCommand("setShuffle(\(shufflePlaylist))")
     }
     
-    open func playVideoAt(_ at: Int) {
+    open func playVideoAt(_ index: Int) {
         evaluatePlayerCommand("playVideoAt(\(at))")
     }
 
