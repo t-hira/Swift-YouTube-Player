@@ -223,6 +223,10 @@ open class YouTubePlayerView: UIView, WKNavigationDelegate {
     open func setShuffle() {
         evaluatePlayerCommand("setShuffle()")
     }
+    
+    open func playVideoFirst() {
+        evaluatePlayerCommand("playVideoAt(0)")
+    }
 
     fileprivate func evaluatePlayerCommand(_ command: String, completion: ((Any?) -> Void)? = nil) {
         let fullCommand = "player." + command + ";"
