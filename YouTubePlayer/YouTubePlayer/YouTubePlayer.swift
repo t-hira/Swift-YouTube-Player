@@ -169,7 +169,7 @@ open class YouTubePlayerView: UIView, WKNavigationDelegate {
 
 
     // MARK: Player controls
-
+    
     open func mute() {
         evaluatePlayerCommand("mute()")
     }
@@ -218,6 +218,10 @@ open class YouTubePlayerView: UIView, WKNavigationDelegate {
 
     open func nextVideo() {
         evaluatePlayerCommand("nextVideo()")
+    }
+    
+    open func setShuffle() {
+        evaluatePlayerCommand("setShuffle()")
     }
 
     fileprivate func evaluatePlayerCommand(_ command: String, completion: ((Any?) -> Void)? = nil) {
